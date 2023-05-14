@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <tittle class="tittleF">
+        <h3>Formulário de Avaliação</h3>
+    </tittle>
+    <Link rel="stylesheet" href="style.css">
+    </link>
+</head>
+
+<body>
+    <div class="form">
+        <form action="mailto: gustavogjs10@gmail.com" method="post" enctype="text/plain">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label>Nome: <input type="text" name="nome" size="30" maxlength="100"> </label> <br>
+                <label> Email: <input type="text" name="email" size="25" maxlength="100"> </label> <br>
+                <label>Idade: <input type="number" name="idade" size="10" maxtength="3"> </label> <br>
+                <label> Peso: <input type="number" name="Peso" size="10" maxlength="5"> </label>
+                <label> Altura: <input type="number" name="Altura" size="10" maxlength="5"> </label> <br>
+                <label>Sexo: <br> <input type="radio" name="sexo" value="Masculino" checked> Masculino <br>
+                    <input type="radio" name="sexo" value="Feminino" checked> Feminino <br>
+                    <input type="radio" name="sexo" value="Não binário" checked> Não binário </label> <br> <br>
+            </fieldset>
+            <fieldset>
+                <legend>Sobre</legend>
+                Frequência que você pede comida pelo nosso site? <br>
+                <label>Frequência:
+                    <select name="utilização">
+                        <option value="1"> Uma vez por semana</option>
+                        <option value="2"> Duas vezes por semana</option>
+                        <option value="3"> Três vezes por semana</option>
+                        <option value="4"> Quatro vezes por semana</option>
+                        <option value="5"> Cinco vezes por semana</option>
+                        <option value="6"> Seis vezes por semana</option>
+                    </select>
+                </label>
+                <br> <br>
+                <label>Avaliação em estrelas do nosso atendimento: <br> <input type="radio" name="motivo" value="0">
+                    0
+                    <input type="radio" name="motivo" value="1"> 1
+                    <input type="radio" name="motivo" value="2"> 2
+                    <input type="radio" name="motivo" value="3"> 3
+                    <input type="radio" name="motivo" value="4"> 4
+                    <input type="radio" name="motivo" value="5" checked> 5
+
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Adicionais</legend>
+                Conte sua opinião sobre nossas comidas. <br>
+                <textarea cols="50" rows="5" name="comentários"> Escreva aqui </textarea> <br> <br>
+                <input type="checkbox" name="receber_info" checked>
+                Desejo receber mensagens sobre promoções. <br> <br>
+            </fieldset>
+            <fieldset>
+                <legend>Campo Pessoal</legend> <br>
+                <label> Insira fotos da comida que você pediu aqui:<br> <input type="file" name="teste" value="teste">
+                </label> <br> <br>
+            </fieldset>
+            <input type="submit" value="Enviar Formulário">
+            <input type="reset" value="Apagar Formulário"> <br> <br>
+
+        </form>
+    </div>
+</body>
